@@ -17,7 +17,7 @@ COPY . .
 RUN go build -o bin/agent-server ./cmd/server
 
 # Runtime stage
-FROM alpine:3.21
+FROM alpine:3.23
 
 RUN apk --no-cache add ca-certificates wget
 
